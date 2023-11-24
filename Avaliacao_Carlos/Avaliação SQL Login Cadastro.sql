@@ -1,0 +1,17 @@
+CREATE DATABASE prova;
+USE prova;
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
+CREATE TABLE usuario (
+id INT NOT NULL AUTO_INCREMENT,
+nome VARCHAR(45) NULL,
+login VARCHAR(45) NULL,
+senha VARCHAR(45) NULL,
+email VARCHAR(45) NULL,
+PRIMARY KEY (id)
+);
+
+select * from usuario;
